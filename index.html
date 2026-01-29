@@ -28,13 +28,12 @@
 </head>
 <body>
 
-<video id="movie" src="Hello_We_Are.mp4" autoplay loop muted playsinline></video>
+<video id="movie" src="Hello_We_Are.mp4" playsinline></video>
 
 <script>
   const video = document.getElementById("movie");
 
-  document.body.addEventListener("click", () => {
-    video.muted = false;
+  video.addEventListener("click", () => {
     video.play();
   });
 </script>
