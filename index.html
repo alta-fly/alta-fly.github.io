@@ -28,7 +28,18 @@
 </head>
 <body>
 
-<video src="Hello_We_Are.mp4" autoplay loop playsinline></video>
+<video id="movie" src="Hello_We_Are.mp4" autoplay loop muted playsinline></video>
 
+<script>
+  const video = document.getElementById("movie");
+
+  document.body.addEventListener("click", () => {
+    video.muted = false;
+    video.play();
+  });
+</script>
+
+Please Click Video.
+    
 </body>
 </html>
